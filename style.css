@@ -1,0 +1,203 @@
+  /* Global */
+body {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  /* Shorthand Syntax font: 16px/1.6 arial, helvetica, sans-serif; */
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.highlight {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+
+.button_1 {
+  height: 38px;
+  background: #e8491d;
+  border:0;
+  padding: 0 20px 0 20px;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.dark {
+  background: #35424a;
+  color: #fff;
+  padding: 15px;
+  margin: 10px 0 10px 0;
+}
+
+/* Header */
+
+header {
+  background: #35424a;
+  color: #fff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+
+header li {
+
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #brand {
+  float: left;
+}
+
+header #brand h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header a:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
+/* Showcase */
+
+#showcase {
+  min-height: 400px;
+  background: url("../image/full-of-white.jpg") no-repeat 0 -400px;
+  text-align: center;
+  color: #fff;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+/* Email form */
+#email {
+  padding: 15px;
+  color: #fff;
+  background: #35424a;
+}
+
+#email h1 {
+  float: left;
+}
+
+#email form {
+  float: right;
+  margin-top: 20px;
+}
+
+#email input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+/* Boxes */
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box img {
+  width: 90px;
+}
+/* Sidebar */
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+article#main-col {
+  float: left;
+  width: 65%;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+/* Services */
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin: 0 0 5px 0;
+  background: #e6e6e6;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #e8491d;
+  text-align: center;
+}
+/* Media Queries */
+@media(max-width: 768px) {
+  header #brand,
+  header nav,
+  header nav li,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+
+  header {
+      padding: 0 0 20px 0;
+    }
+
+  #showcase h1 {
+      margin: 40px 0 0 0;
+    }
+
+  #email button, .quote button{
+    display: block;
+    width: 100%;
+    }
+
+  #email form input[type="email"], .quote input, .quote textarea {
+    width: 100%;
+    margin: 0 0 5px 0;
+    }
+}
